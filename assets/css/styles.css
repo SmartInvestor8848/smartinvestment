@@ -16,8 +16,8 @@
   --text-color: hsl(228, 15%, 50%);
   --text-color-light: hsl(228, 12%, 75%);
   --border-color: hsl(228, 99%, 98%);
-  --body-color: #fff;
-  --container-color: #fff;
+  --body-color: #FFF;
+  --container-color: #FFF;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -102,7 +102,7 @@ button {
 /*=============== THEME ===============*/
 .change-theme {
   font-size: 1.25rem;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   transition: .3s;
 }
@@ -229,7 +229,7 @@ body.dark-theme {
 }
 
 .nav__logo {
-  color: #fff;
+  color: #FFF;
   display: inline-flex;
   align-items: center;
   column-gap: .25rem;
@@ -301,7 +301,7 @@ body.dark-theme {
   background: linear-gradient(101deg,
       hsl(228, 66%, 53%),
       hsl(228, 66%, 47%));
-  color: #fff;
+  color: #FFF;
   box-shadow: 0 4px 8px hsla(228, 66%, 45%, .25);
 }
 
@@ -320,7 +320,7 @@ body.dark-theme {
 
 .home__title,
 .home__value-number {
-  color: #fff;
+  color: #FFF;
 }
 
 .home__title {
@@ -413,7 +413,7 @@ body.dark-theme {
   background: linear-gradient(101deg,
       hsl(228, 66%, 53%),
       hsl(228, 66%, 47%));
-  color: #fff;
+  color: #FFF;
   padding: 14px 28px;
   border-radius: .5rem;
   font-size: var(--normal-font-size);
@@ -717,7 +717,7 @@ body.dark-theme {
 
 .contact__card-button:hover {
   background-color: var(--first-color);
-  color: #fff;
+  color: #FFF;
 }
 
 .contact__card-box:hover {
@@ -739,7 +739,7 @@ body.dark-theme {
 
 .subscribe__title {
   font-size: var(--h2-font-size);
-  color: #fff;
+  color: #FFF;
   margin-bottom: 1rem;
 }
 
@@ -750,7 +750,7 @@ body.dark-theme {
 }
 
 .subscribe__button {
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
   background: var(--first-color-light);
   font-size: var(--small-font-size);
 }
@@ -1261,4 +1261,277 @@ body.dark-theme {
   body {
     zoom: 2;
   }
+}
+
+/* analog clock */
+.homeclock {
+  margin: auto 2%;
+  position: relative;
+  background: #212529;
+  /* min-height: 500px; */
+  border-radius: 20px;
+  border-top-left-radius: 225px;
+  border-top-right-radius: 225px;
+  box-shadow: 5px 25px 75px rgba(0, 0, 0, 0.75),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock {
+  position: relative;
+  width: 340px;
+  height: 330px;
+  background: #212529;
+  border-radius: 50%;
+  box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.clock:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FFF;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  z-index: 10000;
+}
+
+.clock span {
+  position: absolute;
+  inset: 20px;
+  color: #FFF;
+  text-align: center;
+  transform: rotate(calc(30deg*var(--i)));
+}
+
+.clock span b {
+  font-size: 2em;
+  opacity: 0.7;
+  font-weight: 600;
+  display: inline-block;
+  transform: rotate(calc(-30deg*var(--i)));
+}
+
+.circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.circle i {
+  position: absolute;
+  width: 6px;
+  height: 50%;
+  background: var(--clr);
+  opacity: 0.5;
+  transform-origin: bottom;
+  transform: scaleY(0.5);
+}
+
+.circle:nth-child(1) i {
+  width: 2px;
+}
+
+.circle:nth-child(2) i {
+  width: 6px;
+}
+
+.circle2 {
+  width: 240px;
+  height: 240px;
+  z-index: 9;
+}
+
+.circle3 {
+  width: 180px;
+  height: 180px;
+  z-index: 8;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  top: -8.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--clr);
+  box-shadow: 0 0 20px var(--clr),
+    0 0 60px var(--clr);
+}
+
+/* digital clock */
+#time {
+  margin-bottom: 40px;
+  display: flex;
+  padding: 10px 20px;
+  font-size: 2em;
+  font-weight: 600;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+#time div {
+  color: var(--clr);
+  position: relative;
+  width: 60px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after {
+  content: ':';
+  position: absolute;
+  right: -4px;
+}
+
+#time div:last-child {
+  font-size: 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#time div:nth-child(2)::after {
+  animation: animate 1s steps(1) infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* foreign exchange calculator */
+.wrapper {
+  max-height: fit-content;
+  width: 370px;
+  padding: 10px 25px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #FFF;
+  margin: 0 20px;
+}
+
+.wrapper header {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  color: #000;
+}
+
+.wrapper form {
+  margin: 20px 0 20px 0;
+  color: #000;
+}
+
+.wrapper form :where(input, select, button) {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.wrapper form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.wrapper form input {
+  padding: 0 15px;
+  font-size: 15px;
+}
+
+.wrapperform input:focus {
+  padding: 0 14px;
+  border: 2px solid #6751fe;
+}
+
+.wrapper form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.select-box select {
+  width: 90px;
+  font-size: 16px;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #888;
+}
+
+.drop-list .icon {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+.wrapper form button {
+  height: 52px;
+  color: #FFF;
+  font-size: 17px;
+  cursor: pointer;
+  background: #052962;
+  border-radius: 20px;
+}
+
+.btn-blue {
+  height: 52px;
+  background-color: #052962;
+  border-radius: 20px;
+  color: #FFF;
+}
+
+.btn-blue:hover {
+  color: #FFF;
 }
