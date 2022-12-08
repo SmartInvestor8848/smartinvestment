@@ -197,11 +197,11 @@ function getExchangeRate() {
     }
     
     let fromvalue = document.getElementById("fromvalue").value;
-    // let url = `https://v6.exchangerate-api.com/v6/09f6a344b400f3cdd03a88ca/latest/${fromvalue}`;
+    let url = `https://v6.exchangerate-api.com/v6/09f6a344b400f3cdd03a88ca/latest/${fromvalue}`;
 
-    // fetch(url).then(response => response.json()).then(result => {
-    //     let exchangeRate = result.conversion_rates[toCurrency.value];
-    //     let totalExchangeRate = (amountVal * exchangeRate).toFixed(3);
-    //     exchangeRateTxt.innerHTML = `${amountVal} ${fromvalue} = ${totalExchangeRate} ${toCurrency.value}`;
-    // })
+    fetch(url).then(response => response.json()).then(result => {
+        let exchangeRate = result.conversion_rates[toCurrency.value];
+        let totalExchangeRate = (amountVal * exchangeRate).toFixed(3);
+        exchangeRateTxt.innerHTML = `${amountVal} ${fromvalue} = ${totalExchangeRate} ${toCurrency.value}`;
+    })
 }
