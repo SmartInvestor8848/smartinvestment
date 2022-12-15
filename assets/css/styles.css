@@ -1541,3 +1541,40 @@ form .exchange-rate {
 .btn-blue:hover {
   color: #FFF;
 }
+
+/* about.html */
+.aboutus {
+  text-align: center;
+  margin: 0 20% 22% 20%;
+}
+
+.editorial {
+  margin: 2% 3%;
+  display: flex;
+}
+
+.editorial img,
+.editorial-text {
+  border-radius: 5%;
+  max-width: 160px;
+  max-height: 160px;
+}
+
+.team__quote {
+  margin: 1%;
+}
+
+.team__quote button {
+  background-color: #052962;
+  padding: 2px;
+  border: #000 1px solid;
+  border-radius: 5%;
+  color: #FFF;
+}
+.senior{
+  margin: 3% 0 0 3%;
+}
+
+#more {
+  display: none;
+}

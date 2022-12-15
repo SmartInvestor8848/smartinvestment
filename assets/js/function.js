@@ -218,3 +218,20 @@ setInterval(() => {
     seconds.innerHTML = s;
     ampm.innerHTML = am;
 })
+
+
+function readMore(quote) {
+    let dots = document.querySelector(`.team__quote[data-quote="${quote}"] .dots`);
+    let moreText = document.querySelector(`.team__quote[data-quote="${quote}"] .more`); 
+    let btnText = document.querySelector(`.team__quote[data-quote="${quote}"] .myBtn`);
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.textContent = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.textContent = "Read less"; 
+        moreText.style.display = "inline";
+    }
+}
