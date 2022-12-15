@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== Bootstrap ===============-->
-    <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!--=============== BOXICONS ===============-->
@@ -18,6 +16,7 @@
 </head>
 
 <body>
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav__logo">
@@ -26,25 +25,25 @@
             <div class="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="index.html" class="nav__link active-link">
                             <i class="bx bx-home-alt-2"></i>
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#popular" class="nav__link">
+                        <a href="index.html" class="nav__link">
                             <i class='bx bxl-blogger'></i>
                             <span>Blogs</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#value" class="nav__link">
+                        <a href="index.html" class="nav__link">
                             <i class="bx bx-award"></i>
                             <span>Value</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a href="index.html" class="nav__link">
                             <i class="bx bx-phone"></i>
                             <span>Contact</span>
                         </a>
@@ -58,301 +57,310 @@
             </a>
         </nav>
     </header>
-    <section class="home section" id="home">
-        <div class="row container">
-            <div class="col col-lg-5 col-md-5">
-                <div class="homeclock">
-                    <div class="clock">
-                        <div class="circle" id="sc" style="--clr:#04fc43"><i></i></div>
-                        <div class="circle circle2" id="mn" style="--clr:#fee800"><i></i></div>
-                        <div class="circle circle3" id="hr" style="--clr:#ff2972"><i></i></div>
-                        <span style="--i:1;"><b>1</b></span>
-                        <span style="--i:2;"><b>2</b></span>
-                        <span style="--i:3;"><b>3</b></span>
-                        <span style="--i:4;"><b>4</b></span>
-                        <span style="--i:5;"><b>5</b></span>
-                        <span style="--i:6;"><b>6</b></span>
-                        <span style="--i:7;"><b>7</b></span>
-                        <span style="--i:8;"><b>8</b></span>
-                        <span style="--i:9;"><b>9</b></span>
-                        <span style="--i:10;"><b>10</b></span>
-                        <span style="--i:11;"><b>11</b></span>
-                        <span style="--i:12;"><b>12</b></span>
-                    </div>
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <div class="homeclock">
+                        <div class="clock">
+                            <div class="circle" id="sc" style="--clr:#04fc43"><i></i></div>
+                            <div class="circle circle2" id="mn" style="--clr:#fee800"><i></i></div>
+                            <div class="circle circle3" id="hr" style="--clr:#ff2972"><i></i></div>
+                            <span style="--i:1;"><b>1</b></span>
+                            <span style="--i:2;"><b>2</b></span>
+                            <span style="--i:3;"><b>3</b></span>
+                            <span style="--i:4;"><b>4</b></span>
+                            <span style="--i:5;"><b>5</b></span>
+                            <span style="--i:6;"><b>6</b></span>
+                            <span style="--i:7;"><b>7</b></span>
+                            <span style="--i:8;"><b>8</b></span>
+                            <span style="--i:9;"><b>9</b></span>
+                            <span style="--i:10;"><b>10</b></span>
+                            <span style="--i:11;"><b>11</b></span>
+                            <span style="--i:12;"><b>12</b></span>
+                        </div>
 
-                    <!--digitalclock-->
-                    <div id="time">
-                        <div id="hours" style="--clr:#04fc43">00</div>
-                        <div id="minutes" style="--clr:#fee800">00</div>
-                        <div id="seconds" style="--clr:#ff2972">00</div>
-                        <div id="ampm" style="--clr:#fff">AM</div>
+                        <!--digitalclock-->
+                        <div id="time">
+                            <div id="hours" style="--clr:#04fc43">00</div>
+                            <div id="minutes" style="--clr:#fee800">00</div>
+                            <div id="seconds" style="--clr:#ff2972">00</div>
+                            <div id="ampm" style="--clr:#fff">AM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__images">
+                    <div class="homequote">
+                        <h2>Smart investing make<br>your money grow faster.</h2><br>
+                        <p>Established in 2020 for sharing financial Advices. Stocks
+                            can be a valuable part ofyour investment portfolio. Owning stocks in different
+                            companies can help you build your savings, protect your money from inflation and
+                            maximize income from your investments. It's important to know that there are
+                            risks when investing in thestock market. Like any investment, it helps to understand
+                            the risk/return relationship and your own tolerance for risk.<br><br>
+                            Historically, long-term equity returns have been better than returns from cash or
+                            fixed-income investments such as bonds. However, stock prices tend to rise and fall
+                            over time. Investors may want to consider a long-term perspective for their equity
+                            portfolio because these stock-market fluctuations do tend to smooth outoverlonger
+                            periods of time.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="homequote col col-lg-7 col-md-7">
-                <div class="hometext">
-                    <h2>Smart investing make<br>your money grow faster.</h2><br>
-                    <p>
-                        Established in 2020 for sharing financial Advices. Stocks can be a valuable part ofyour
-                        investment portfolio. Owning stocks in different companies can help you build your savings,
-                        protect your money from inflation and maximize income from your investments. It's important
-                        to
-                        know that there are risks when investing in thestock market. Like any investment, it helps
-                        to
-                        understand the risk/return relationship and your own tolerance for risk.<br><br>
-                        Historically, long-term equity returns have been better than returns from cash or
-                        fixed-income
-                        investments such as bonds. However, stock prices tend to rise and fall over time. Investors
-                        may
-                        want to consider a long-term perspective for their equity portfolio because these
-                        stock-market
-                        fluctuations do tend to smooth outoverlonger periods of time.
+            <br>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="wrapper">
+                        <header>NEPSE Calculator</header>
+                        <form action="#">
+                            <div class="stock">
+                                <select id="stock" onclick="display();">
+                                    <option value="disabled" selected disabled>Select Any Option</option>
+                                    <option value="f">Fair Value</option>
+                                    <option value="b">Buying Share</option>
+                                    <option value="s">Selling Share </option>
+                                    <option value="bo">Bonus Share Adjustment</option>
+                                    <option value="ri">Right Share Adjustment</option>
+                                    <option value="wa">Weighted Average</option>
+                                </select>
+                                <!-- bonus adjustment -->
+                                <div class="nepseresult" id="bonus" style="display:none ;">
+                                    <label>Market Price (before book close)</label>
+                                    <input type="number" id="box1" placeholder="0">
+                                    <label>Percent of bonus Share</label>
+                                    <input type="number" id="box2" placeholder="%"><br>
+                                    <input class="btn btn-blue rounded-pill" type="button" value="Calculate"
+                                        onclick="calcBonus()">
+                                    <label>Price after bonus adjustment</label>
+                                    <input type="text" id="b"><br>
+                                </div>
+                                <!-- right adjustment -->
+                                <div class="nepseresult" id="right" style="display:none ;">
+                                    <label>Market Price (before book close)</label>
+                                    <input type="number" id="box3" placeholder="0">
+                                    <label>Percent of right share</label>
+                                    <input type="number" id="box4" placeholder="%">
+                                    <label>Paid up value</label>
+                                    <select type="number" name="networth" id="box5" required>
+                                        <option value="100" selected>100</option>
+                                        <option value="10">10</option>
+                                    </select><br>
+                                    <input class="btn btn-blue rounded-pill" type="button" value="Calculate"
+                                        onclick="calcRight()">
+                                    <label>Price After Adjustment</label>
+                                    <input type="text" id="r" placeholder="0">
+                                </div>
+                                <!-- buying -->
+                                <div class="nepseresult" id="buy" style="display:none ;">
+                                    <label>Share Quantity</label>
+                                    <input type="text" id="box6" placeholder="0">
+                                    <label>Purchase Price</label>
+                                    <input type="text" id="box7" placeholder="0"><br>
+                                    <input class="btn btn-blue rounded-pill" type="button" value="Calculate"
+                                        onclick="calcPay()">
+                                    <label>Total Payable Amount</label>
+                                    <input type="text" id="c" placeholder="0">
+                                </div>
+                                <!-- selling -->
+                                <div class="nepseresult" id="sell" style="display:none ;">
+                                    <label>Share Quantity</label>
+                                    <input type="text" id="box8" placeholder="0">
+                                    <label>Purchase Price</label>
+                                    <input type="text" id="box9" placeholder="0">
+                                    <label>Selling Price</label>
+                                    <input type="text" id="box10" placeholder="0">
+                                    <label>Capital gain tax</label>
+                                    <input class="form-control form-control-sm" list="boxtaxs" name="boxtax" id="boxtax"
+                                        required>
+                                    <datalist id="boxtaxs">
+                                        <option value="0.075" selected>SCGT->7.5%</option>
+                                        <option value="0.05">LCGT->5% </option>
+                                        <option value="0">Loss->0%</option>
+                                    </datalist><br>
+                                    <input class="btn btn-blue rounded-pill" type="button" value="Calculate"
+                                        onclick="calcSell()">
+                                    <label>Total Recievable Amount</label>
+                                    <input type="text" id="d" placeholder="0">
+                                </div>
+                                <!-- fairvalue -->
+                                <div class="nepseresult" id="fair" style="display:none ;">
+                                    <label>Net Income</label>
+                                    <input type="text" id="box11" placeholder="0">
+                                    <label>Total Listed Share</label>
+                                    <input type="text" id="box12" placeholder="0">
+                                    <label>Book Value</label>
+                                    <input type="text" id="box13" placeholder="0">
+                                    <br>
+                                    <input class="btn btn-blue rounded-pill" type="button" value="Calculate"
+                                        onclick="invest()">
+                                    <label>Earning Per share</label>
+                                    <input type="text" id="eps" placeholder="0">
+                                    <label>Fair Value</label>
+                                    <input type="text" id="v" placeholder="0">
+
+                                </div>
+                                <!-- wacc -->
+                                <div class="nepseresult" id="wacc" style="display:none ;">
+                                    <label>WACC</label>
+                                    <input type="text" id="box14" placeholder="0">
+                                    <label>Share Quantity</label>
+                                    <input type="text" id="box15" placeholder="0">
+                                    <label>Dividend Percent</label>
+                                    <input type="text" id="box16" placeholder="%">
+                                    <br>
+                                    <input class="btn btn-blue rounded-pill" type="button" value="Calculate"
+                                        onclick="wacc()"><br>
+                                    <label>Weighted Average</label>
+                                    <input type="text" id="wa" placeholder="0">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="calculate" id="calculate">Please select to Calculate...</div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <div class="wrapper">
+                        <header>Currency Converter</header>
+                        <form action="#">
+                            <div class="amount">
+                                <label for="name">Enter Amount</label>
+                                <!-- <p>Enter Amount</p> -->
+                                <input type="text" value="1" id="fromAmt">
+                            </div>
+                            <div class="drop-list">
+                                <div class="form">
+                                    <p>From</p>
+                                    <div class="select-box">
+                                        <select name="fromvalue" id="fromvalue"></select>
+                                    </div>
+                                </div>
+                                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                                <div class="to">
+                                    <p>To</p>
+                                    <div class="select-box">
+                                        <select name="tovalue" id="to"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="exchange-rate" id="rate">Getting Exchange Rate...</div>
+                            <button id="swap">Get Exchange Rate</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        Smart Investo<i class='bx bx-rupee' style="margin-left: -5px;"></i>
+                    </a>
+                    <p class="footer__description">
+                        Our vision is to make all people <br>
+                        smart for better life.
                     </p>
                 </div>
-            </div>
-        </div>
-        <br>
-    </section>
-
-    <div class="services container grid" style="margin-top: 5%;">
-        <div class="row fo">
-            <div class="wrapper col">
-                <header>NEPSE Calculator</header>
-                <form action="#">
-                    <div class="stock">
-                        <select id="stock" onclick="display();">
-                            <option value="disabled" selected disabled>Select Any Option</option>
-                            <option value="f">Fair Value</option>
-                            <option value="b">Buying Share</option>
-                            <option value="s">Selling Share </option>
-                            <option value="bo">Bonus Share Adjustment</option>
-                            <option value="ri">Right Share Adjustment</option>
-                            <option value="wa">Weighted Average</option>
-                        </select>
-                        <br>
-                        <!-- bonus adjustment -->
-                        <div class="nepseresult" id="bonus" style="display:none ;">
-                            <label>Market Price (before book close)</label>
-                            <input type="number" id="box1" placeholder="0">
-                            <label>Percent of bonus Share</label>
-                            <input type="number" id="box2" placeholder="%"><br>
-                            <input class="btn btn-blue rounded-pill" type="button" value="Calculate" onclick="calcBonus()">
-                            <label>Price after bonus adjustment</label>
-                            <input type="text" id="b"><br>
-                        </div>
-                        <!-- right adjustment -->
-                        <div class="nepseresult" id="right" style="display:none ;">
-                            <label>Market Price (before book close)</label>
-                            <input type="number" id="box3" placeholder="0">
-                            <label>Percent of right share</label>
-                            <input type="number" id="box4" placeholder="%">
-                            <label>Paid up value</label>
-                            <select type="number" name="networth" id="box5" required>
-                                <option value="100" selected>100</option>
-                                <option value="10">10</option>
-                            </select><br>
-                            <input class="btn btn-blue rounded-pill" type="button" value="Calculate" onclick="calcRight()">
-                            <label>Price After Adjustment</label>
-                            <input type="text" id="r" placeholder="0">
-                        </div>
-                        <!-- buying -->
-                        <div class="nepseresult" id="buy" style="display:none ;">
-                            <label>Share Quantity</label>
-                            <input type="text" id="box6" placeholder="0">
-                            <label>Purchase Price</label>
-                            <input type="text" id="box7" placeholder="0"><br>
-                            <input class="btn btn-blue rounded-pill" type="button" value="Calculate" onclick="calcPay()">
-                            <label>Total Payable Amount</label>
-                            <input type="text" id="c" placeholder="0">
-                        </div>
-                        <!-- selling -->
-                        <div class="nepseresult" id="sell" style="display:none ;">
-                            <label>Share Quantity</label>
-                            <input type="text" id="box8" placeholder="0">
-                            <label>Purchase Price</label>
-                            <input type="text" id="box9" placeholder="0">
-                            <label>Selling Price</label>
-                            <input type="text" id="box10" placeholder="0">
-                            <label>Capital gain tax</label>
-                            <input class="form-control form-control-sm" list="boxtaxs" name="boxtax" id="boxtax"
-                                required>
-                            <datalist id="boxtaxs">
-                                <option value="0.075" selected>SCGT->7.5%</option>
-                                <option value="0.05">LCGT->5% </option>
-                                <option value="0">Loss->0%</option>
-                            </datalist><br>
-                            <input class="btn btn-blue rounded-pill" type="button" value="Calculate" onclick="calcSell()">
-                            <label>Total Recievable Amount</label>
-                            <input type="text" id="d" placeholder="0">
-                        </div>
-                        <!-- fairvalue -->
-                        <div class="nepseresult" id="fair" style="display:none ;">
-                            <label>Net Income</label>
-                            <input type="text" id="box11" placeholder="0">
-                            <label>Total Listed Share</label>
-                            <input type="text" id="box12" placeholder="0">
-                            <label>Book Value</label>
-                            <input type="text" id="box13" placeholder="0">
-                            <br>
-                            <input class="btn btn-blue rounded-pill" type="button" value="Calculate" onclick="invest()">
-                            <label>Earning Per share</label>
-                            <input type="text" id="eps" placeholder="0">
-                            <label>Fair Value</label>
-                            <input type="text" id="v" placeholder="0">
-
-                        </div>
-                        <!-- wacc -->
-                        <div class="nepseresult" id="wacc" style="display:none ;">
-                            <label>WACC</label>
-                            <input type="text" id="box14" placeholder="0">
-                            <label>Share Quantity</label>
-                            <input type="text" id="box15" placeholder="0">
-                            <label>Dividend Percent</label>
-                            <input type="text" id="box16" placeholder="%">
-                            <br>
-                            <input class="btn btn-blue rounded-pill" type="button" value="Calculate" onclick="wacc()"><br>
-                            <label>Weighted Average</label>
-                            <input type="text" id="wa" placeholder="0">
-                        </div>
+                <div class="footer__content">
+                    <div>
+                        <h3 class="footer__title">
+                            About
+                        </h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">About us</a>
+                            </li>
+                            <li>
+                                <a href="services.html" class="footer__link">Services</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">News & Blogs</a>
+                            </li>
+                        </ul>
                     </div>
-                    <br>
-                    <div class="calculate" id="calculate">Please select to Calculate...</div>
-                </form>
-            </div>
-            <div class="wrapper col">
-                <header>Currency Converter</header>
-                <form action="#">
-                    <div class="amount">
-                        <label for="name">Enter Amount</label>
-                        <!-- <p>Enter Amount</p> -->
-                        <input type="text" value="1" id="fromAmt">
+
+                    <div>
+                        <h3 class="footer__title">
+                            Company
+                        </h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">How we Work?</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Capital</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Security</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="drop-list">
-                        <div class="form">
-                            <p>From</p>
-                            <div class="select-box">
-                                <select name="fromvalue" id="fromvalue"></select>
-                            </div>
-                        </div>
-                        <div class="icon"><i class="fas fa-exchange-alt"></i></div>
-                        <div class="to">
-                            <p>To</p>
-                            <div class="select-box">
-                                <select name="tovalue" id="to"></select>
-                            </div>
-                        </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Support
+                        </h3>
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Support center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Contact us</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="exchange-rate" id="rate">Getting Exchange Rate...</div>
-                    <button id="swap">Get Exchange Rate</button>
-                </form>
-            </div>
-        </div>
-    </div>
 
-
-    <footer class="footer section">
-        <div class="footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    Smart Investo<i class='bx bx-rupee' style="margin-left: -5px;"></i>
-                </a>
-                <p class="footer__description">
-                    Our vision is to make all people <br>
-                    smart for better life.
-                </p>
-            </div>
-            <div class="footer__content">
-                <div>
-                    <h3 class="footer__title">
-                        About
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">About us</a>
-                        </li>
-                        <li>
-                            <a href="services.html" class="footer__link">Services</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">News & Blogs</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Company
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">How we Work?</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Capital</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Security</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Support
-                    </h3>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">FAQs</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Support center</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Follow us
-                    </h3>
-                    <ul class="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                            <i class="bx bxl-facebook-circle"></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                            <i class="bx bxl-instagram-alt"></i>
-                        </a>
-                        <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                    </ul>
+                    <div>
+                        <h3 class="footer__title">
+                            Follow us
+                        </h3>
+                        <ul class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class="bx bxl-facebook-circle"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class="bx bxl-instagram-alt"></i>
+                            </a>
+                            <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="footer__info container">
-            <span class="sooter__copy">
-                &#169; SmartInvestor. All rights reserved
-            </span>
-            <div class="footer__privacy">
-                <a href="#">Terms & Agreement</a>
-                <a href="#">Privacy Policy</a>
+            <div class="footer__info container">
+                <span class="sooter__copy">
+                    &#169; SmartInvestor. All rights reserved
+                </span>
+                <div class="footer__privacy">
+                    <a href="#">Terms & Agreement</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-chevrons-up"></i>
+        </a>
 
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="bx bx-chevrons-up"></i>
-    </a>
-
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/function.js"></script>
-    <script src="assets/js/countrylist.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/function.js"></script>
+        <script src="assets/js/countryList.js"></script>
 </body>
 
 </html>
